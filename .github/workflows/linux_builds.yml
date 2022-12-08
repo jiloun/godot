@@ -137,7 +137,6 @@ jobs:
       - name: Prepare artifact
         if: ${{ matrix.artifact }}
         run: |
-          strip bin/godot.*
           chmod +x bin/godot.*
 
       - name: Upload artifact
